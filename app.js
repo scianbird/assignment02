@@ -1,8 +1,8 @@
 //make an array to store the images (as objects)
 const images = [
   {
-    image: "aliencat.JPG",
-    thumbnail: "aliencat.JPG",
+    image: "aliencat.jpg",
+    thumbnail: "aliencat.jpg",
     alt: "A table at a craft market. The focus is on a cat made of clay and styled to look like a green alien.",
     thumbnailclass: "thumbnailIMG",
     fullscreenclass: "fullscreenIMG",
