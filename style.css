@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: image-set(
+    url("media/backgroundCompressed.jpg") 1x,
+    url("media/10262400.jpg") 2x
+  );
+  margin-left: 1rem;
+  margin-right: 1rem;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+}
+
+button {
+  background-color: lightcoral;
+  padding: 5px;
+  color: aliceblue;
+  opacity: 50%;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 100%;
+}
+
+.thumbnailDisplay {
+  display: flex;
+  grid-column: 2;
+  justify-content: center;
+  align-content: center;
+  margin-top: 2rem;
+  cursor: pointer;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  z-index: 100;
+  width: auto;
+  height: 90px;
+}
+
+.fullscreenDisplay {
+  display: flex;
+  grid-column: 2;
+  justify-content: center;
+  object-fit: contain;
+  width: 100%;
+  height: 100vh;
+}
+
+.previousImage {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 4vh;
+  top: 50vh;
+  width: 60px;
+  height: 30px;
+}
+
+.nextImage {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  right: 4vh;
+  top: 50vh;
+  width: 60px;
+  height: 30px;
+}
+
+.toggleGallery {
+  display: flex;
+  position: absolute;
+  left: 4vh;
+  top: 3vh;
+}
+
+.toggleJournal {
+  display: flex;
+  position: absolute;
+  top: 7vh;
+  left: 4vh;
+}
+
+.journalText {
+  display: flex;
+  position: absolute;
+  top: 10rem;
+  right: 1rem;
+  width: 100px;
+  height: 80px;
+  background-color: lightgoldenrodyellow;
+  z-index: 100;
+}
+
+@media (max-width: 600px) {
+  .thumbnailDisplay {
+    display: flex;
+    grid-column: 2;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    z-index: 100;
+    width: auto;
+    height: 90px;
+    position: absolute;
+    margin-top: 80vh;
+  }
+
+  .toggleGallery {
+    display: flex;
+    position: absolute;
+    left: 4vh;
+    top: 3vh;
+    height: 25px;
+  }
+}

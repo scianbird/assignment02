@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snapshots from my Phone Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!--body should include 2 sections, one for the thumbnail gallery and one to place the fullscreen image, and 3 buttons - show/hide, previous and next. Buttons should have aria labels-->
+    <section id="thumbnailDisplay" class="thumbnailDisplay"></section>
+    <section id="fullscreenDisplay" class="fullscreenDisplay"></section>
+    <!--<section id="journalText" class="journalText"><p>Journal</p></section>-->
+    <section class="buttons">
+      <button
+        id="previousImage"
+        class="previousImage"
+        aria-label="Open previous image"
+      >
+        ←
+      </button>
+      <button id="nextImage" class="nextImage" aria-label="Open next image">
+        →
+      </button>
+      <button
+        id="toggleGallery"
+        class="toggleGallery"
+        aria-label="Toggle Thumbnail gallery"
+      >
+        Toggle Gallery
+      </button>
+      <!-- <button id="toggleJournal" class="toggleJournal">Journal</button>-->
+    </section>
+  </body>
+</html>
